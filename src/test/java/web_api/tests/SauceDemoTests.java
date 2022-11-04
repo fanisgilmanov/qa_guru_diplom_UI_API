@@ -107,7 +107,7 @@ public class SauceDemoTests extends TestBase {
         });
 
     }
-
+    /*
     @Test
     @DisplayName("Проверка авторизации пользователя API + UI ")
     void authorizationUserTest() {
@@ -208,5 +208,5 @@ public class SauceDemoTests extends TestBase {
         });
 
     }
-
+*/
 }
