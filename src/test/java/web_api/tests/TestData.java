@@ -8,12 +8,6 @@ import java.text.SimpleDateFormat;
 
 public class TestData {
 
-    static CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
-    String loginSelenoid = config.login();
-    String passwordSelenoid = config.password();
-    String remoteUrlSelenoid = config.remoteUrlSelenoid();
-
-
     String menuClothes = "Одежда";
     String menuRelatedProd = "Сопутствующие товары";
     String menuPaintings = "Картины";
