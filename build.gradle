@@ -1,6 +1,6 @@
 plugins {
     id 'java-library'
-    id 'io.qameta.allure' version '2.9.6'
+    id 'io.qameta.allure' version '2.10.0'
     id 'io.freefair.lombok' version '6.0.0-m2'
 }
 
@@ -31,7 +31,6 @@ allure {
 
 dependencies {
     testImplementation(
-            "com.codeborne:selenide:6.5.0",
             "org.aspectj:aspectjweaver:1.9.6",
             "com.github.javafaker:javafaker:1.0.2",
             "com.codeborne:selenide:$selenideVersion",
@@ -44,25 +43,15 @@ dependencies {
             "org.junit.jupiter:junit-jupiter:$junitVersion")
 }
 
+compileJava.options.encoding = 'UTF-8'
+
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 tasks.withType(Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform()
-
-    if (System.getProperty("threads") != null) {
-        systemProperties += [
-                'junit.jupiter.execution.parallel.enabled'                 : true,
-                'junit.jupiter.execution.parallel.mode.default'            : 'concurrent',
-                'junit.jupiter.execution.parallel.mode.classes.default'    : 'concurrent',
-                'junit.jupiter.execution.parallel.config.strategy'         : 'fixed',
-                'junit.jupiter.execution.parallel.config.fixed.parallelism': System.getProperty("threads").toInteger()
-        ]
-    }
 
     testLogging {
         lifecycle {
