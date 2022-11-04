@@ -9,10 +9,11 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import web_api.config.CredentialsConfig;
+import web_api.helpers.Attach;
 import web_api.pages.SauceDemoPage;
 
 import static java.lang.String.format;
-import static web_api.helpers.Attach.*;
+
 
 public class TestBase {
     static TestData testData = new TestData();
@@ -37,10 +38,10 @@ public class TestBase {
 
 
     @AfterEach
-    public void afterEach() {
-        screenshotAs("Last screenshot");
-        pageSource();
-        browserConsoleLogs();
-        addVideo();
+    void addAttachments() {
+        Attach.screenshotAs("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
     }
 }
