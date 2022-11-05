@@ -9,7 +9,7 @@
 * <a href="#code">Код</a>
     + <a href="#intelij">InteliJ IDEA, Java, JUnit 5, Selenide, Rest Assured</a>
     + <a href="#gradle">Gradle</a>
-* <a href="#screenshot">Скриншоты и видео</a>
+* <a href="#screenshot">Скриншоты</a>
   + <a href="#selenoid">Selenoid</a>
   + <a href="#jenkins">Jenkins</a>
   + <a href="#allure">Allure TestOps, Allure Report</a>
