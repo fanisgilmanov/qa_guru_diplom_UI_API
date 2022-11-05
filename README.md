@@ -220,8 +220,8 @@ dependencies {
         </a>
         </td>
         <td>
-        <a href="readme_files/allure/AllureStatus.png">
-        <img src="https://user-images.githubusercontent.com/72714071/190114161-e05363e0-79a9-4d9f-9301-e25bf42c3bd3.png">
+        <a href="https://jenkins.autotests.cloud/job/qa_guru_diplom_UI_API/13/allure/#graph">
+        <img src="readme_files/allure/AllureStatus.png">
         </a>
         </td>
 </table>
