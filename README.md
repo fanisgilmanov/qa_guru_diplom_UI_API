@@ -12,7 +12,7 @@
 * <a href="#screenshot">Скриншоты</a>
   + <a href="#jenkins">Jenkins</a>
   + <a href="#allure">Allure TestOps, Allure Report</a>
-  + <a href="#notifications">Telegram, Email</a>
+  + <a href="#notifications">Telegram</a>
 
 
 
