@@ -169,6 +169,8 @@ dependencies {
 
 
 
+<a id="screenshot"></a>
+## Скриншоты и видео :camera_flash:
 
 <a id="jenkins"></a>
 #### <img alt="Jenkins" height="50" src="readme_files/technologies/jenkins.svg" width="50"/>Jenkins</a>
