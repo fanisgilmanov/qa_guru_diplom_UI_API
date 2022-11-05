@@ -13,7 +13,13 @@ repositories {
 
 def allureVersion = "2.18.1",
     selenideVersion = "6.5.0",
-    junitVersion = "5.8.2"
+    junitVersion = "5.8.2",
+    aspectjweaverVersion = "1.9.6",
+    javafakerVersion = "1.0.2",
+    restAssuredVersion = "4.3.1",
+    ownerVersion = "1.0.12",
+    assertjCoreVersion = "3.19.0",
+    slf4jSimpleVersion = "1.7.29"
 
 allure {
     report {
@@ -31,15 +37,15 @@ allure {
 
 dependencies {
     testImplementation(
-            "org.aspectj:aspectjweaver:1.9.6",
-            "com.github.javafaker:javafaker:1.0.2",
+            "org.aspectj:aspectjweaver:$aspectjweaverVersion",
+            "com.github.javafaker:javafaker:$javafakerVersion",
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
-            "io.rest-assured:rest-assured:4.3.1",
+            "io.rest-assured:rest-assured:$restAssuredVersion",
             "io.qameta.allure:allure-rest-assured:$allureVersion",
-            "org.aeonbits.owner:owner:1.0.12",
-            "org.assertj:assertj-core:3.19.0",
-            "org.slf4j:slf4j-simple:1.7.29",
+            "org.aeonbits.owner:owner:$ownerVersion",
+            "org.assertj:assertj-core:$assertjCoreVersion",
+            "org.slf4j:slf4j-simple:$slf4jSimpleVersion",
             "org.junit.jupiter:junit-jupiter:$junitVersion")
 }
 
