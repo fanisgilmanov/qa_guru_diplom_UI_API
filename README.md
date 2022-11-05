@@ -1,5 +1,5 @@
 <a href="https://github.com/"><img alt="github.com" height="50" src="readme_files/technologies/github.svg"/></a>
-# GitHub. Автотесты на Java
+# Демо проект по автоматизации тестирования на Java. Сайт shop1.emagazin.info.
 
 
 ## Содержание :bookmark_tabs:
