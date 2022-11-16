@@ -119,7 +119,6 @@ public class SauceDemoTests extends TestBase {
         step("Добавление товара в корзину", () -> {
             sauceDemoPage.addToCardProduct();
         });
-
     }
 }    
 ```
