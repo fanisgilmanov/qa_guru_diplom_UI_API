@@ -18,15 +18,11 @@ public class Specifications {
             .log().all()
             .contentType("application/x-www-form-urlencoded; charset=utf-8");
 
-
     public static ResponseSpecification responseSpecFail200 = new ResponseSpecBuilder()
             .expectStatusCode(200)
             .build();
 
-
     public static ResponseSpecification responseSpec302 = new ResponseSpecBuilder()
             .expectStatusCode(302)
             .build();
-
-
 }

@@ -3,19 +3,15 @@ package web_api.models;
 import lombok.Data;
 
 @Data
-public class ReqresRequestModels {
+public class RequestModels {
     private String back;
     private String email;
     private String password;
     private String submitLogin;
-
-
-    private String id_gender;
-    private String firstname;
-    private String lastname;
-    private String birthday;
+    private String idGender;
+    private String firstName;
+    private String lastName;
+    private String birthDay;
     private String psgdpr;
     private String submitCreate;
-
-
 }

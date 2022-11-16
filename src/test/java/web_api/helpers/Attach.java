@@ -3,9 +3,11 @@ package web_api.helpers;
 
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import web_api.config.CredentialsConfig;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -15,6 +17,7 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attach {
+    static CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
 
     @Attachment(value = "{attachName}", type = "image/png")
     public static byte[] screenshotAs(String attachName) {
@@ -46,7 +49,7 @@ public class Attach {
     }
 
     public static URL getVideoUrl() {
-        String videoUrl = "https://selenoid.autotests.cloud/video/" + getSessionId() + ".mp4";
+        String videoUrl = config.remoteUrl() + getSessionId() + ".mp4";
 
         try {
             return new URL(videoUrl);
@@ -56,7 +59,7 @@ public class Attach {
         return null;
     }
 
-    public static String getSessionId(){
+    public static String getSessionId() {
         return ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
     }
 }

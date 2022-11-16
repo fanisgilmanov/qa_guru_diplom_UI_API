@@ -4,9 +4,6 @@ plugins {
     id 'io.freefair.lombok' version '6.0.0-m2'
 }
 
-group 'guru.qa'
-version '1.0'
-
 repositories {
     mavenCentral()
 }
@@ -48,8 +45,6 @@ dependencies {
             "org.slf4j:slf4j-simple:$slf4jSimpleVersion",
             "org.junit.jupiter:junit-jupiter:$junitVersion")
 }
-
-compileJava.options.encoding = 'UTF-8'
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'

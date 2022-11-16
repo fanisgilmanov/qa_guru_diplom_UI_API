@@ -3,10 +3,11 @@ package web_api.config;
 import org.aeonbits.owner.Config;
 
 @Config.Sources("classpath:credential.properties")
-public interface CredentialsConfig extends Config{
-    String loginSelenoid();
+public interface CredentialsConfig extends Config {
+    String login();
 
-    String passwordSelenoid();
+    String password();
 
-    String remoteUrlSelenoid();
+    String remoteUrl();
+
 }
